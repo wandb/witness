@@ -1,0 +1,13 @@
+*.swp
+.python-version
+wandb
+wandb-debug.log
+__pycache__
+.DS_Store
+layers-*
+model
+wandb
+predict
+data/train
+data/valid
+network-visualizations
