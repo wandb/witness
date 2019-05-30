@@ -2,6 +2,8 @@
 
 This repo is example code and data for training a CNN to identify patterns from the video game "The Witness".
 
+[Witness deep learning](readme-image.jpg)
+
 To train the model:
 
 ```sh
