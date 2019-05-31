@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from model import unet
+import argparse
 import wandb
 import os
 from wandb.keras import WandbCallback
@@ -14,9 +15,15 @@ import tensorflow as tf
 seed(1)
 set_random_seed(2)
 
-PROJECT_NAME = 'witness'
-
 from data import get_training_data
+
+parser = argparse.ArgumentParser(description='Train the witness model.')
+parser.add_argument('-e', '--epochs', type=int, help='Number of epochs to run.')
+parser.add_argument('-s', '--steps', type=int, help='Number of steps per epoch.')
+parser.add_argument('--batch-size', type=int, help='Batch size.')
+parser.add_argument('--beta', type=int, help='Degree to prefer positive predictions.')
+parser.add_argument('--learning-rate', type=float, help='Learning rate.')
+parser.add_argument('--num-predictions', type=int, help='Number of predictions in the validation set to log to W&B.')
 
 augmentation_params = {
     'rotation_range': 0.2,
@@ -44,15 +51,18 @@ def weighted_cross_entropy(beta):
     return loss
 
 def main():
+    # Get args
+    args = parser.parse_args()
+
     # Init wandb
-    run = wandb.init(project=PROJECT_NAME, tensorboard=True)
-    run.config.learning_rate = 1e-4
-    run.config.num_epochs = 100
-    run.config.steps_per_epoch = 300
-    run.config.batch_size = 8
+    run = wandb.init(tensorboard=True)
+    run.config.learning_rate = args.learning_rate or 1e-4
+    run.config.num_epochs = args.epochs or 100
+    run.config.steps_per_epoch = args.steps or 300
+    run.config.batch_size = args.batch_size or 8
     run.config.image_size = (288, 512)
-    run.config.num_predictions = 24
-    run.config.beta = 50
+    run.config.num_predictions = args.num_predictions or 24
+    run.config.beta = args.beta or 50
 
     wandb.save('*.py')
 
