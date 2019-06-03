@@ -13,7 +13,7 @@ pyenv local witness-3.6
 echo witness-3.6 > .python-version
 
 # Install requirements.
-pip install -r requirements.txt
+pip install -U -r requirements.txt
 
 # Install tensorflow GPU support if needed
 pip install tensorflow-gpu
