@@ -50,7 +50,7 @@ smmap2==2.0.5             # via gitdb2
 subprocess32==3.5.3       # via wandb
 tensorboard==1.13.1       # via tensorflow
 tensorflow-estimator==1.13.0  # via tensorflow
-tensorflow==1.13.1
+tensorflow==1.15.0
 termcolor==1.1.0          # via tensorflow
 thrift==0.11.0            # via fastparquet
 urllib3==1.24.2           # via requests, sentry-sdk
