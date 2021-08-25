@@ -3,6 +3,6 @@ pandas
 fastparquet
 keras
 numpy
-tensorflow==1.13.1
+tensorflow==2.5.1
 pillow
 keras-metrics
