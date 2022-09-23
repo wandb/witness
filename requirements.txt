@@ -35,7 +35,7 @@ pathtools==0.1.2          # via watchdog
 pbr==5.2.0                # via mock
 pillow==6.0.0
 promise==2.2.1            # via gql, graphql-core
-protobuf==3.7.1           # via tensorboard, tensorflow
+protobuf==3.18.3           # via tensorboard, tensorflow
 psutil==5.6.2             # via wandb
 python-dateutil==2.8.0    # via pandas, wandb
 pytz==2018.9              # via pandas
