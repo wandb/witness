@@ -33,7 +33,7 @@ nvidia-ml-py3==7.352.0    # via wandb
 pandas==0.24.2
 pathtools==0.1.2          # via watchdog
 pbr==5.2.0                # via mock
-pillow==6.0.0
+pillow==9.3.0
 promise==2.2.1            # via gql, graphql-core
 protobuf==3.7.1           # via tensorboard, tensorflow
 psutil==5.6.2             # via wandb
