@@ -7,7 +7,7 @@
 absl-py==0.7.1            # via tensorboard, tensorflow, tensorflow-estimator
 argh==0.26.2              # via watchdog
 astor==0.7.1              # via tensorflow
-certifi==2019.3.9         # via requests, sentry-sdk
+certifi==2022.12.7         # via requests, sentry-sdk
 chardet==3.0.4            # via requests
 click==7.0                # via wandb
 docker-pycreds==0.4.0     # via wandb
