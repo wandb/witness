@@ -57,4 +57,4 @@ urllib3==1.24.2           # via requests, sentry-sdk
 wandb
 watchdog==0.9.0           # via wandb
 werkzeug==0.15.3          # via tensorboard
-wheel==0.33.4             # via tensorboard, tensorflow
+wheel==0.38.1             # via tensorboard, tensorflow
