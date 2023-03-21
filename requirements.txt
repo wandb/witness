@@ -43,7 +43,7 @@ pyyaml==5.1               # via keras, watchdog
 requests==2.21.0          # via wandb
 rx==1.6.1                 # via graphql-core
 scipy==1.2.1              # via keras
-sentry-sdk==0.7.14        # via wandb
+sentry-sdk==1.14.0        # via wandb
 shortuuid==0.5.0          # via wandb
 six==1.12.0               # via absl-py, docker-pycreds, fastparquet, gql, graphql-core, grpcio, h5py, keras, keras-preprocessing, mock, promise, protobuf, python-dateutil, tensorboard, tensorflow, tensorflow-estimator, thrift, wandb
 smmap2==2.0.5             # via gitdb2
