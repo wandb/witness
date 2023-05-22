@@ -40,7 +40,7 @@ psutil==5.6.2             # via wandb
 python-dateutil==2.8.0    # via pandas, wandb
 pytz==2018.9              # via pandas
 pyyaml==5.1               # via keras, watchdog
-requests==2.21.0          # via wandb
+requests==2.31.0          # via wandb
 rx==1.6.1                 # via graphql-core
 scipy==1.2.1              # via keras
 sentry-sdk==0.7.14        # via wandb
