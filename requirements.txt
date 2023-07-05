@@ -17,7 +17,7 @@ gitdb2==2.0.5             # via gitpython
 gitpython==2.1.11         # via wandb
 gql==0.1.0                # via wandb
 graphql-core==2.1         # via gql
-grpcio==1.20.1            # via tensorboard, tensorflow
+grpcio==1.53.0            # via tensorboard, tensorflow
 h5py==2.9.0               # via keras, keras-applications
 idna==2.8                 # via requests
 keras-applications==1.0.7  # via keras, tensorflow
