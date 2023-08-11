@@ -14,7 +14,7 @@ docker-pycreds==0.4.0     # via wandb
 fastparquet==0.3.1
 gast==0.2.2               # via tensorflow
 gitdb2==2.0.5             # via gitpython
-gitpython==2.1.11         # via wandb
+gitpython==3.1.32         # via wandb
 gql==0.1.0                # via wandb
 graphql-core==2.1         # via gql
 grpcio==1.20.1            # via tensorboard, tensorflow
